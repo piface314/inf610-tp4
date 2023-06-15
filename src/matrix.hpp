@@ -4,14 +4,6 @@
 
 #include <ostream>
 
-#define PRINT_M(A,M,N) {std::cout << "\u23A1"; \
-    for (size_t i = 0; i < M; ++i) { \
-        std::cout << (i ? " " : "") << " "; \
-        for (size_t j = 0; j < N; ++j) \
-            std::cout << A[i][j] << " "; \
-        if (i + 1 == M) std::cout << "\u23A6"; \
-        std::cout << "\n"; \
-    }}
 
 template <typename T>
 struct Matrix {
